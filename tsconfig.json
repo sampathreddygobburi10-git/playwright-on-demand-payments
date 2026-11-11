@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "types": ["node", "react", "@playwright/test"],
+    "typeRoots": ["./types", "../node_modules/@types", "../node_modules"]
+  },
+  "include": [
+    "../playwright.config.ts",
+    "tests/**/*.ts",
+    "fixtures/**/*.ts",
+    "network/**/*.ts",
+    "pages/**/*.ts",
+    "utils/**/*.ts"
+  ],
+  "exclude": ["node_modules", "../node_modules", "**/node_modules"]
+}
